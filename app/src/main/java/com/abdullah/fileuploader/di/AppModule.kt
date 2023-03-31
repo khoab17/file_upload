@@ -12,7 +12,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
-import com.chuckerteam.chucker.api.ChuckerInterceptor
 import dagger.Module
 import dagger.hilt.android.components.ApplicationComponent
 import okhttp3.Interceptor
@@ -36,7 +35,7 @@ class AppModule {
         val loggingInterceptor = HttpLoggingInterceptor()
         loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
         builder.addInterceptor(loggingInterceptor)
-        builder.addInterceptor(ChuckerInterceptor.Builder(application.applicationContext).build())
+       // builder.addInterceptor(ChuckerInterceptor.Builder(application.applicationContext).build())
         builder.addInterceptor(
             Interceptor { chain ->
                 val originalRequest = chain.request()

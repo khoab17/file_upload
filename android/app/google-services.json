@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "540385108986",
+    "project_id": "townhall-380706",
+    "storage_bucket": "townhall-380706.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540385108986:android:205e2a60fc89a34e2ffa43",
+        "android_client_info": {
+          "package_name": "com.townhall.social_audit_south_africa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540385108986-1lqagvjjn32b59lt4feffjlejd2mimev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.townhall.social_audit_south_africa",
+            "certificate_hash": "7731af0dfefd3300e36acdf33796176bc92c9af6"
+          }
+        },
+        {
+          "client_id": "540385108986-9l9gra5mqqk0r7jkij4a05m3sqdb4dpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVsCPz13ExRfNTJBRejOZ04_qB_Jtox7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540385108986-9l9gra5mqqk0r7jkij4a05m3sqdb4dpj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

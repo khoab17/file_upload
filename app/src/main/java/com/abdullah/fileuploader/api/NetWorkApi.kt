@@ -1,6 +1,6 @@
 package com.abdullah.fileuploader.api
 
-import com.chethan.pagingSample.model.MediaServerResponse
+import com.abdullah.fileuploader.model.MediaServerResponse
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Response

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sharjahuniversity.type2dm_poc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".HiltApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_townhall"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_townhall"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Type2DMPoc"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="adjustPan"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".ui.view.HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.Type2DMPoc" />
+        <activity
+            android:name=".ui.view.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Type2DMPoc">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".data.remote.FCMService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:node="remove" />
+    </application>
+
+</manifest>
